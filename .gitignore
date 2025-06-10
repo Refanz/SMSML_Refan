@@ -4,6 +4,4 @@
 .gitignore
 /Membangun_model/metric_info.json
 /Membangun_model/estimator.html
-/Membangun_model/screenshoot_dashboard.png
-/Membangun_model/screenshoot_artifak.png
 /Membangun_model/training_confusion_matrix.png
