@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/704693283784678602/7f6ea4a8530f45808096ff84f34b8271/artifacts
+deleted_time: 1749558678139
+end_time: 1749545617914
+entry_point_name: ''
+experiment_id: '704693283784678602'
+lifecycle_stage: deleted
+run_id: 7f6ea4a8530f45808096ff84f34b8271
+run_name: honorable-conch-726
+run_uuid: 7f6ea4a8530f45808096ff84f34b8271
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749545613431
+status: 3
+tags: []
+user_id: refanzzzz

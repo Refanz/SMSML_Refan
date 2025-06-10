@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/704693283784678602/e3a8f344e50d4070b1070fbe0f61bb44/artifacts
+end_time: 1749560322785
+entry_point_name: ''
+experiment_id: '704693283784678602'
+lifecycle_stage: active
+run_id: e3a8f344e50d4070b1070fbe0f61bb44
+run_name: whimsical-hog-796
+run_uuid: e3a8f344e50d4070b1070fbe0f61bb44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749560277066
+status: 3
+tags: []
+user_id: refanzzzz

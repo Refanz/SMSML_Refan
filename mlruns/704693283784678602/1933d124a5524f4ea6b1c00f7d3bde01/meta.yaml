@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/704693283784678602/1933d124a5524f4ea6b1c00f7d3bde01/artifacts
+deleted_time: 1749560122068
+end_time: 1749559982243
+entry_point_name: ''
+experiment_id: '704693283784678602'
+lifecycle_stage: deleted
+run_id: 1933d124a5524f4ea6b1c00f7d3bde01
+run_name: vaunted-shoat-479
+run_uuid: 1933d124a5524f4ea6b1c00f7d3bde01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749559936963
+status: 4
+tags: []
+user_id: refanzzzz

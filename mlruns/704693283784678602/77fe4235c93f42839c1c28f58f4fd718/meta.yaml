@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/704693283784678602/77fe4235c93f42839c1c28f58f4fd718/artifacts
+deleted_time: 1749558678153
+end_time: 1749542745739
+entry_point_name: ''
+experiment_id: '704693283784678602'
+lifecycle_stage: deleted
+run_id: 77fe4235c93f42839c1c28f58f4fd718
+run_name: treasured-sheep-101
+run_uuid: 77fe4235c93f42839c1c28f58f4fd718
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749542737582
+status: 3
+tags: []
+user_id: refanzzzz

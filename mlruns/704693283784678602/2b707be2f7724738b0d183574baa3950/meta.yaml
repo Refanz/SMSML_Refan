@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/704693283784678602/2b707be2f7724738b0d183574baa3950/artifacts
+deleted_time: 1749560459593
+end_time: 1749560156715
+entry_point_name: ''
+experiment_id: '704693283784678602'
+lifecycle_stage: deleted
+run_id: 2b707be2f7724738b0d183574baa3950
+run_name: rogue-moose-735
+run_uuid: 2b707be2f7724738b0d183574baa3950
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749560112883
+status: 3
+tags: []
+user_id: refanzzzz

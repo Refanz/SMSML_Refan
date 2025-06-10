@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/704693283784678602/35e78ef89b95448dba76eb94d15b5abb/artifacts
+deleted_time: 1749558678140
+end_time: 1749544375333
+entry_point_name: ''
+experiment_id: '704693283784678602'
+lifecycle_stage: deleted
+run_id: 35e78ef89b95448dba76eb94d15b5abb
+run_name: glamorous-donkey-793
+run_uuid: 35e78ef89b95448dba76eb94d15b5abb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749544366419
+status: 3
+tags: []
+user_id: refanzzzz

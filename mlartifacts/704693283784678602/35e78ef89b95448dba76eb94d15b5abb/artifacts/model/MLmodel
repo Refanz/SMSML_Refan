@@ -1,0 +1,43 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+is_signature_from_type_hint: false
+mlflow_version: 2.22.1
+model_size_bytes: 1316
+model_uuid: 88b87535569f4fe99674a3a4d266d6e5
+prompts: null
+run_id: 35e78ef89b95448dba76eb94d15b5abb
+signature:
+  inputs: '[{"type": "double", "name": "cap-shape", "required": true}, {"type": "double",
+    "name": "cap-surface", "required": true}, {"type": "double", "name": "cap-color",
+    "required": true}, {"type": "double", "name": "bruises", "required": true}, {"type":
+    "double", "name": "odor", "required": true}, {"type": "double", "name": "gill-attachment",
+    "required": true}, {"type": "double", "name": "gill-spacing", "required": true},
+    {"type": "double", "name": "gill-size", "required": true}, {"type": "double",
+    "name": "gill-color", "required": true}, {"type": "double", "name": "stalk-shape",
+    "required": true}, {"type": "double", "name": "stalk-root", "required": true},
+    {"type": "double", "name": "stalk-surface-above-ring", "required": true}, {"type":
+    "double", "name": "stalk-surface-below-ring", "required": true}, {"type": "double",
+    "name": "stalk-color-above-ring", "required": true}, {"type": "double", "name":
+    "stalk-color-below-ring", "required": true}, {"type": "double", "name": "veil-type",
+    "required": true}, {"type": "double", "name": "veil-color", "required": true},
+    {"type": "double", "name": "ring-number", "required": true}, {"type": "double",
+    "name": "ring-type", "required": true}, {"type": "double", "name": "spore-print-color",
+    "required": true}, {"type": "double", "name": "population", "required": true},
+    {"type": "double", "name": "habitat", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-10 08:32:52.132393'

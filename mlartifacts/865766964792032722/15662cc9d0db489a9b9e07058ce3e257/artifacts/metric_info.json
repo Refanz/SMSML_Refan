@@ -1,0 +1,3 @@
+{
+  "SVC_score_X_test": "SVC.score(X=X_test, y=y_test)"
+}

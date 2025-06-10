@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/704693283784678602/0f42a12735e144319837f89001169fc5/artifacts
+deleted_time: 1749558678144
+end_time: 1749544662139
+entry_point_name: ''
+experiment_id: '704693283784678602'
+lifecycle_stage: deleted
+run_id: 0f42a12735e144319837f89001169fc5
+run_name: shivering-fawn-59
+run_uuid: 0f42a12735e144319837f89001169fc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749544656397
+status: 3
+tags: []
+user_id: refanzzzz

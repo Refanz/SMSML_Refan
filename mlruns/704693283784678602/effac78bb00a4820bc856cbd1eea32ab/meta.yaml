@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/704693283784678602/effac78bb00a4820bc856cbd1eea32ab/artifacts
+deleted_time: 1749558678153
+end_time: 1749542887152
+entry_point_name: ''
+experiment_id: '704693283784678602'
+lifecycle_stage: deleted
+run_id: effac78bb00a4820bc856cbd1eea32ab
+run_name: dapper-pig-574
+run_uuid: effac78bb00a4820bc856cbd1eea32ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749542878791
+status: 3
+tags: []
+user_id: refanzzzz

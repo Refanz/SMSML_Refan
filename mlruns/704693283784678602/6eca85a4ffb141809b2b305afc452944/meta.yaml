@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/704693283784678602/6eca85a4ffb141809b2b305afc452944/artifacts
+deleted_time: 1749560122074
+end_time: 1749560088289
+entry_point_name: ''
+experiment_id: '704693283784678602'
+lifecycle_stage: deleted
+run_id: 6eca85a4ffb141809b2b305afc452944
+run_name: clumsy-eel-797
+run_uuid: 6eca85a4ffb141809b2b305afc452944
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749560042216
+status: 4
+tags: []
+user_id: refanzzzz

@@ -1,0 +1,23 @@
+digest: af8fddfb
+name: dataset
+profile: '{"num_rows": 1625, "num_elements": 35750}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "cap-shape", "required": true},
+  {"type": "double", "name": "cap-surface", "required": true}, {"type": "double",
+  "name": "cap-color", "required": true}, {"type": "double", "name": "bruises", "required":
+  true}, {"type": "double", "name": "odor", "required": true}, {"type": "double",
+  "name": "gill-attachment", "required": true}, {"type": "double", "name": "gill-spacing",
+  "required": true}, {"type": "double", "name": "gill-size", "required": true}, {"type":
+  "double", "name": "gill-color", "required": true}, {"type": "double", "name": "stalk-shape",
+  "required": true}, {"type": "double", "name": "stalk-root", "required": true}, {"type":
+  "double", "name": "stalk-surface-above-ring", "required": true}, {"type": "double",
+  "name": "stalk-surface-below-ring", "required": true}, {"type": "double", "name":
+  "stalk-color-above-ring", "required": true}, {"type": "double", "name": "stalk-color-below-ring",
+  "required": true}, {"type": "double", "name": "veil-type", "required": true}, {"type":
+  "double", "name": "veil-color", "required": true}, {"type": "double", "name": "ring-number",
+  "required": true}, {"type": "double", "name": "ring-type", "required": true}, {"type":
+  "double", "name": "spore-print-color", "required": true}, {"type": "double", "name":
+  "population", "required": true}, {"type": "double", "name": "habitat", "required":
+  true}]}'
+source: '{"tags": {"mlflow.user": "refanzzzz", "mlflow.source.name": "/home/refanzzzz/PycharmProjects/SMSML_Refan/Membangun_model/modelling.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "b635fe626201c3cbe6121398459c14b4c4921cf0"}}'
+source_type: code
