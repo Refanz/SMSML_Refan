@@ -1,11 +1,16 @@
+import json
+import dagshub
 import mlflow
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, precision_score, log_loss, roc_auc_score, f1_score, recall_score
+from sklearn.metrics import accuracy_score, precision_score, log_loss, roc_auc_score, f1_score, recall_score, \
+    confusion_matrix
 from sklearn.model_selection import train_test_split, GridSearchCV
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-mlflow.set_tracking_uri("http://127.0.0.1:5000/")
-mlflow.set_experiment("SMSML")
+# Init dagshub
+dagshub.init(repo_owner='refandasuryasaputra', repo_name='mushroom-model', mlflow=True)
 
 # Load dataset dari github
 dataset_url = "https://raw.githubusercontent.com/refanz/Eksperimen_SML_Refan/master/preprocessing/mushrooms_preprocessed.csv"
@@ -59,6 +64,10 @@ with mlflow.start_run():
     y_pred = best_model.predict(X_test)
     test_accuracy = best_model.score(X_test, y_test)
 
+    # Metrik tambahan
+    test_log_loss = log_loss(y_test, y_pred)
+    test_roc_auc = roc_auc_score(y_test, y_pred)
+
     # Mencatat metrik training dan testing ke MLFlow
     mlflow.log_metrics({
         'train_accuracy': train_accuracy,
@@ -68,12 +77,62 @@ with mlflow.start_run():
         'train_log_loss': train_log_loss,
         'train_roc_auc': train_roc_auc,
         'test_accuracy': test_accuracy,
+        'test_log_loss': test_log_loss,
+        'test_roc_auc': test_roc_auc,
     })
 
     # Menyimpan model terbaik ke MLFlow
     mlflow.sklearn.log_model(best_model, 'model', input_example=input_example)
 
+    # Menyimpan metric info dalam bentuk json
+    metric_info = {
+        'LogisticRegression_score_X_test': 'LogisticRegression.score(X=X_test, y=y_test)',
+    }
 
+    metric_info_path = "metric_info.json"
 
+    with open(metric_info_path, "w") as f:
+        json.dump(metric_info, f, indent=4)
 
+    mlflow.log_artifact(metric_info_path)
 
+    # Menyimpan confusion matrix training
+    cm_train = confusion_matrix(y_train, y_train_pred)
+
+    fig, ax = plt.subplots(figsize=(12, 8))
+    sns.heatmap(cm_train, annot=True, fmt='g', ax=ax)
+    ax.set_xlabel('Predicted')
+    ax.set_ylabel('Actual')
+    ax.set_title('Confusion matrix')
+
+    cm_train_path = 'training_confusion_matrix.png'
+
+    plt.savefig(cm_train_path)
+    plt.close(fig)
+
+    mlflow.log_artifact(cm_train_path)
+
+    # Menyimpan parameter model sebagai html
+    estimator_html = f"""
+        <!doctype html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Document</title>
+        </head>
+        <body>
+            <h1>Detail Model Estimator</h1>
+            <p>Rangkuman Model Regresi Logistik yang telah dilatih</p>
+            <h2>Parameters</h2>
+            {best_params}
+        </body>
+        </html>
+    """
+
+    estimator_html_path = "estimator.html"
+
+    with open(estimator_html_path, "w") as f:
+        f.write(estimator_html)
+
+    mlflow.log_artifact(estimator_html_path)
